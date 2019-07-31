@@ -1,0 +1,115 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "9b3658a6-454e-4061-86c6-8a874d31a790": {
+        "id": "9b3658a6-454e-4061-86c6-8a874d31a790",
+        "parent": null,
+        "name": "hiru3107_issueverify",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "fb6961c3-1aaa-4f3d-83b9-3a35236cd008"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru3107_issueverify"
+      },
+      "fb6961c3-1aaa-4f3d-83b9-3a35236cd008": {
+        "id": "fb6961c3-1aaa-4f3d-83b9-3a35236cd008",
+        "parent": "9b3658a6-454e-4061-86c6-8a874d31a790",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru3107_issueverify/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1HiruPythonissueverifyget",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "9b3658a6-454e-4061-86c6-8a874d31a790",
+    "openFiles": [
+      "fb6961c3-1aaa-4f3d-83b9-3a35236cd008"
+    ],
+    "currentFileId": "fb6961c3-1aaa-4f3d-83b9-3a35236cd008",
+    "resources": {
+      "apigusEast1HiruPythonissueverifyget": {
+        "name": "apigusEast1HiruPythonissueverifyget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "Hiru_Python",
+          "apiId": "5lfeg68xcc",
+          "endpointType": "EDGE",
+          "rootResourceId": "h8t8jkldj4",
+          "existingResources": {
+            "/thetest": "7uobo9",
+            "/thetest/js": "eeshp7",
+            "/": "h8t8jkldj4",
+            "/hiru/27": "j6p3s3",
+            "/hiru": "m7it15",
+            "/hiru/36": "rtfag1",
+            "/thetest/python": "t0i5e8"
+          },
+          "resourceMode": 0,
+          "resourceName": "issueverify",
+          "resourcePath": "/issueverify",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "12cf9h",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru3107_issueverify",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1564566696577
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru3107_issueverify",
+      "url": "https://github.com/HirudineeADRT/hiru3107_issueverify",
+      "branches": []
+    }
+  }
+}
